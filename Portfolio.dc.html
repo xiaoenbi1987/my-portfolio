@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#241d16">
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<circle cx="600" cy="330" r="120" fill="#e8b165"/>
+<rect x="420" y="480" width="360" height="220" rx="16" fill="none" stroke="#e8b165" stroke-width="10"/>
+<text x="600" y="770" text-anchor="middle" font-family="monospace" font-size="34" fill="#f4ede2">Huiru Bi — AI PM</text>
+</svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--bg:oklch(15% 0.014 55);--bg2:oklch(19% 0.018 55);--card:oklch(21% 0.02 55);--line:oklch(30% 0.02 55);--ink:oklch(97% 0.006 55);--ink-dim:oklch(76% 0.02 55);--ink-mute:oklch(58% 0.02 55);--amber:oklch(75% 0.14 70);--teal:oklch(75% 0.14 200);--amber-dim:oklch(75% 0.14 70 / 0.14);--teal-dim:oklch(75% 0.14 200 / 0.14)}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Manrope','PingFang SC','Microsoft YaHei',sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:var(--amber);text-decoration:none}
+a:hover{color:oklch(82% 0.13 70)}
+.page{max-width:1180px;margin:0 auto;padding:0 28px}
+.mono{font-family:'IBM Plex Mono',monospace}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--amber);text-transform:uppercase}
+.navbar{position:sticky;top:0;z-index:50;background:oklch(15% 0.014 55 / 0.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:700;font-size:16px;letter-spacing:.01em}
+.navlinks{display:none;gap:28px;font-size:14px;color:var(--ink-dim)}
+.navlinks a{color:var(--ink-dim)}
+.navlinks a:hover{color:var(--ink)}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;border:1px solid var(--line);background:transparent;color:var(--ink);padding:8px 14px;border-radius:100px;cursor:pointer}
+.langbtn:hover{border-color:var(--amber);color:var(--amber)}
+.hero{padding:56px 0 64px;border-bottom:1px solid var(--line)}
+.hero-inner{display:flex;flex-direction:column-reverse;gap:32px;align-items:flex-start}
+.hero-text{flex:1;min-width:0;max-width:640px}
+.hero-photo-wrap{flex-shrink:0}
+.hero-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.hero-name{font-size:32px;font-weight:800;margin:14px 0 2px;line-height:1.15}
+.hero-namesub{font-size:15px;color:var(--ink-mute);margin:0 0 14px}
+.hero-role{font-size:16px;font-weight:600;color:var(--amber);margin:0 0 10px;line-height:1.4}
+.hero-tagline{font-size:22px;font-weight:700;line-height:1.35;margin:0 0 14px;max-width:640px}
+.hero-bio{font-size:15px;line-height:1.7;color:var(--ink-dim);max-width:600px;margin:0 0 22px}
+.chiprow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;max-width:560px}
+.chip{font-size:12.5px;font-family:'IBM Plex Mono',monospace;padding:7px 12px;border-radius:100px;border:1px solid var(--line);color:var(--ink-dim);background:var(--bg2)}
+.contactrow{display:flex;flex-wrap:wrap;gap:10px}
+.contact-pill{display:flex;align-items:center;gap:8px;font-size:13.5px;padding:9px 14px;border-radius:10px;background:var(--card);border:1px solid var(--line);color:var(--ink)}
+.contact-pill:hover{border-color:var(--amber)}
+.resume-btn{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;padding:9px 18px;border-radius:10px;background:var(--amber);color:var(--bg);border:1px solid var(--amber)}
+.resume-btn:hover{background:oklch(82% 0.13 70);color:var(--bg)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0}
+.section{padding:64px 0}
+.section-head{margin-bottom:36px}
+.section-title{font-size:28px;font-weight:800;margin:8px 0 0}
+.projects-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.project-card{position:relative;border-radius:16px;border:1px solid var(--line);background:linear-gradient(160deg,var(--accent-dim),var(--card) 55%);padding:28px}
+.project-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}
+.project-index{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent)}
+.project-title{font-size:21px;font-weight:800;margin:2px 0 2px}
+.project-subtitle{font-size:14px;color:var(--ink-dim);margin:0 0 4px}
+.project-role{font-size:12.5px;color:var(--ink-mute);margin:0 0 16px}
+.gh-link{font-family:'IBM Plex Mono',monospace;font-size:12.5px;border:1px solid var(--line);padding:6px 12px;border-radius:100px;white-space:nowrap;color:var(--ink)}
+.gh-link:hover{border-color:var(--accent);color:var(--accent)}
+.project-desc{font-size:14.5px;line-height:1.7;color:var(--ink-dim);margin:0 0 20px}
+.tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.ptag{font-size:11.5px;font-family:'IBM Plex Mono',monospace;color:var(--accent);border:1px solid var(--accent);padding:4px 10px;border-radius:100px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+.metric-val{font-size:24px;font-weight:800;font-family:'IBM Plex Mono',monospace;color:var(--ink)}
+.metric-label{font-size:12px;color:var(--ink-mute);line-height:1.4;margin-top:4px}
+.metrics-note{font-size:11px;color:var(--ink-mute);margin-top:14px;font-style:italic}
+.timeline{position:relative;padding-left:26px;border-left:1px solid var(--line)}
+.timeline-item{position:relative;padding-bottom:38px}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-dot{position:absolute;left:-30.5px;top:4px;width:9px;height:9px;border-radius:50%;background:var(--amber);border:3px solid var(--bg)}
+.tl-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:6px}
+.tl-role{font-size:17px;font-weight:700}
+.tl-org{color:var(--ink-dim);font-weight:500}
+.tl-meta{font-size:12.5px;color:var(--ink-mute);font-family:'IBM Plex Mono',monospace;white-space:nowrap}
+.tl-list{margin:0;padding-left:18px;color:var(--ink-dim);font-size:14px;line-height:1.75}
+.tl-list li{margin-bottom:4px}
+.tl-badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;color:var(--teal);border:1px solid var(--teal);padding:2px 8px;border-radius:100px;margin-bottom:8px;display:inline-block}
+.skills-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.skill-group{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--card)}
+.skill-group-title{font-size:14.5px;font-weight:700;color:var(--teal);margin:0 0 14px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.04em}
+.skill-item{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--ink-dim);padding:7px 0;border-top:1px solid var(--line)}
+.skill-item:first-of-type{border-top:none}
+.cert-table{width:100%;border-collapse:collapse;font-size:14px}
+.cert-table th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-mute);padding:0 14px 12px 0;border-bottom:1px solid var(--line);font-weight:500}
+.cert-table td{padding:16px 14px 16px 0;border-bottom:1px solid var(--line);color:var(--ink-dim);vertical-align:top}
+.cert-name{color:var(--ink);font-weight:700}
+.footer{padding:64px 0 40px;border-top:1px solid var(--line);background:var(--bg2)}
+.footer-heading{font-size:26px;font-weight:800;max-width:100%;margin:0 0 28px}
+.footer-grid{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:36px}
+.footer-copy{font-size:12.5px;color:var(--ink-mute);font-family:'IBM Plex Mono',monospace}
+@media(min-width:760px){
+.navlinks{display:flex}
+.hero-inner{flex-direction:row;align-items:center;gap:40px}
+.hero-photo{width:340px;height:340px}
+.hero-name{font-size:38px}
+.hero-tagline{font-size:26px}
+.projects-grid{grid-template-columns:repeat(3,1fr)}
+.skills-grid{grid-template-columns:repeat(4,1fr)}
+.section-title{font-size:34px}
+}
+@media(max-width:759px){
+.metrics{grid-template-columns:repeat(3,1fr);gap:10px}
+.metric-val{font-size:19px}
+.metric-label{font-size:10.5px}
+.page{padding:0 20px}
+}
+</style></helmet>
+<div class="navbar"><div class="nav-inner"><div class="brand">{{ heroNameShort }}</div><div class="navlinks"><a href="#projects">{{ nav.projects }}</a><a href="#experience">{{ nav.experience }}</a><a href="#certificates">{{ nav.certs }}</a><a href="#skills">{{ nav.skills }}</a><a href="#contact">{{ nav.contact }}</a></div><button class="langbtn" onClick="{{ toggleLang }}">{{ langBtnLabel }}</button></div></div>
+<div class="page">
+<section class="hero" id="hero"><div class="hero-inner">
+<div class="hero-text">
+<div class="eyebrow">{{ eyebrows.hero }}</div>
+<h1 class="hero-name">{{ heroName }}</h1>
+<p class="hero-role">{{ heroRole }}</p>
+<p class="hero-tagline">{{ heroTagline }}</p>
+<p class="hero-bio">{{ heroBio }}</p>
+<div class="chiprow"><sc-for list="{{ heroChips }}" as="chip" hint-placeholder-count="5"><span class="chip">{{ chip }}</span></sc-for></div>
+</div>
+<div class="hero-photo-wrap"><img class="hero-photo" src="assets/huiru-photo.jpg" alt="{{ heroName }}"></div>
+</div></section>
+
+<section class="section" id="projects"><div class="section-head"><div class="eyebrow">{{ eyebrows.projects }}</div><h2 class="section-title">{{ sectionTitles.projects }}</h2></div>
+<div class="projects-grid"><sc-for list="{{ projects }}" as="p" hint-placeholder-count="3">
+<div class="project-card" style="--accent:{{ p.accent }};--accent-dim:{{ p.accentDim }}">
+<div class="project-top"><div><div class="project-index">{{ p.index }}</div><h3 class="project-title">{{ p.title }}</h3><p class="project-subtitle">{{ p.subtitle }}</p><p class="project-role">{{ p.role }}</p></div><a class="gh-link" href="{{ p.github }}" target="_blank" rel="noopener">GitHub ↗</a></div>
+<p class="project-desc">{{ p.description }}</p>
+<div class="tagrow"><sc-for list="{{ p.tags }}" as="tag" hint-placeholder-count="4"><span class="ptag">{{ tag }}</span></sc-for></div>
+<div class="metrics"><sc-for list="{{ p.metrics }}" as="m" hint-placeholder-count="3"><div><div class="metric-val">{{ m.value }}</div><div class="metric-label">{{ m.label }}</div></div></sc-for></div>
+<div class="metrics-note">{{ p.metricsNote }}</div>
+</div>
+</sc-for></div>
+</section>
+
+<section class="section" id="experience"><div class="section-head"><div class="eyebrow">{{ eyebrows.experience }}</div><h2 class="section-title">{{ sectionTitles.experience }}</h2></div>
+<div class="timeline"><sc-for list="{{ experience }}" as="e" hint-placeholder-count="3">
+<div class="timeline-item"><div class="timeline-dot"></div>
+<sc-if value="{{ e.badge }}"><span class="tl-badge">{{ e.badge }}</span></sc-if>
+<div class="tl-top"><div><span class="tl-role">{{ e.role }}</span> — <span class="tl-org">{{ e.org }}</span></div><div class="tl-meta">{{ e.meta }}</div></div>
+<ul class="tl-list"><sc-for list="{{ e.bullets }}" as="b" hint-placeholder-count="3"><li>{{ b }}</li></sc-for></ul>
+</div>
+</sc-for></div>
+</section>
+
+<section class="section" id="certificates"><div class="section-head"><div class="eyebrow">{{ eyebrows.certs }}</div><h2 class="section-title">{{ sectionTitles.certs }}</h2></div>
+<table class="cert-table"><thead><tr><th>{{ certLabels.name }}</th><th>{{ certLabels.status }}</th><th>{{ certLabels.org }}</th></tr></thead><tbody>
+<sc-for list="{{ certificates }}" as="cert" hint-placeholder-count="3"><tr><td class="cert-name">{{ cert.name }}</td><td>{{ cert.status }}</td><td>{{ cert.org }}</td></tr></sc-for>
+</tbody></table>
+</section>
+
+<section class="section" id="skills"><div class="section-head"><div class="eyebrow">{{ eyebrows.skills }}</div><h2 class="section-title">{{ sectionTitles.skills }}</h2></div>
+<div class="skills-grid"><sc-for list="{{ skillGroups }}" as="g" hint-placeholder-count="4">
+<div class="skill-group"><div class="skill-group-title">{{ g.name }}</div><sc-for list="{{ g.items }}" as="it" hint-placeholder-count="5"><div class="skill-item">{{ it }}</div></sc-for></div>
+</sc-for></div>
+</section>
+</div>
+
+<footer class="footer" id="contact"><div class="page">
+<div class="eyebrow">{{ eyebrows.contact }}</div>
+<h2 class="footer-heading">{{ footer.heading }}</h2>
+<div class="footer-grid"><sc-for list="{{ contactItems }}" as="c" hint-placeholder-count="4"><a class="contact-pill" href="{{ c.href }}" target="{{ c.target }}"><span class="dot"></span>{{ c.value }}</a></sc-for></div>
+<div class="footer-copy">{{ footer.copyright }}</div>
+</div></footer>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: 'en' };
+
+  data = {
+    en: {
+      heroNameShort: 'Huiru Bi',
+      nav: { projects: 'Projects', experience: 'Experience', skills: 'Skills', certs: 'Credentials', contact: 'Contact' },
+      eyebrows: { hero: 'AI Product Manager · Portfolio', projects: '01 — Work', experience: '02 — Path', certs: '03 — Education & Credentials', skills: '04 — Toolkit', contact: '05 — Contact' },
+      heroName: 'Huiru Bi',
+      heroRole: 'AI Product Manager / AI Solution Engineer / AI Builder',
+      heroTagline: 'Building trustworthy AI solutions for real-world problems.',
+      heroBio: 'AI-focused product professional with hands-on experience across conversational AI and RAG systems — skilled in user needs analysis, cross-functional collaboration, and go-to-market execution.',
+      heroChips: ['Prompt Engineering & Claude API', 'RAG & AI Evaluation', 'AI Safety & Trustworthiness', 'Cross-functional Delivery', '0→1 Go-to-Market'],
+      sectionTitles: { projects: 'Selected Projects', experience: 'Experience', skills: 'Skills & Tools', certs: 'Education & Credentials' },
+      contactItems: [
+        { value: 'NYC Metro Area · US work authorized, no sponsorship required', href: '#contact', target: '_self' },
+        { value: 'linkedin.com/in/huiru-bi-187a05309', href: 'https://linkedin.com/in/huiru-bi-187a05309', target: '_blank' },
+        { value: 'github.com/xiaoenbi1987', href: 'https://github.com/xiaoenbi1987', target: '_blank' }
+      ],
+      projects: [
+        { index: '01', accent: 'var(--amber)', accentDim: 'var(--amber-dim)', title: 'DocuBot', subtitle: 'RAG Document Q&A Assistant', role: 'Solo builder — product & engineering', github: 'https://github.com/xiaoenbi1987/docubot-rag-project',
+          description: "LLMs confidently hallucinate answers to technical documentation questions. I built a lightweight Retrieval-Augmented Generation system from scratch, benchmarking pure LLM generation, keyword search, and full RAG — then implemented the pipeline myself: document indexing, relevance scoring, and chunk retrieval. The key product decision: a safety guardrail that refuses to answer when there's no supporting evidence.",
+          tags: ['RAG', 'Claude API', 'Evaluation', 'Python'],
+          metrics: [{ value: '68%', label: 'fewer hallucinated answers vs. baseline generation' }, { value: '3', label: 'retrieval strategies benchmarked head-to-head' }, { value: '92%', label: 'accuracy on held-out technical doc set' }],
+          metricsNote: 'Illustrative prototype benchmarks' },
+        { index: '02', accent: 'var(--teal)', accentDim: 'var(--teal-dim)', title: 'AegisBot', subtitle: 'AI-Assisted Crisis Triage Prototype', role: 'Product design & safety validation', github: 'https://github.com/xiaoenbi1987/aegisbot-tinker',
+          description: 'A dual-model crisis triage prototype that cross-validates risk level using a rule-based engine and a machine-learning classifier independently, then conservatively takes the higher risk assessment — so no case can silently slip through. Hands-on testing surfaced real failure modes, including keyword misclassification and language coverage gaps, all documented transparently in the model card.',
+          tags: ['AI Safety', 'Model Evaluation', 'Dual-Model Validation', 'Human-in-the-loop'],
+          metrics: [{ value: '0', label: 'high-risk cases silently missed, by design' }, { value: '4', label: 'real failure modes found & documented' }, { value: '2', label: 'independent models cross-validated per case' }],
+          metricsNote: 'Illustrative prototype metrics' },
+        { index: '03', accent: 'var(--amber)', accentDim: 'var(--amber-dim)', title: 'OrderAI', subtitle: 'AI Phone-Ordering SaaS Platform', role: 'Product owner — positioning, pricing, GTM', github: 'https://github.com/xiaoenbi1987/OrderAI',
+          description: 'An early-stage SaaS product for U.S. small businesses — restaurants, nail salons, spas, and clinics — that handles phone orders via AI voice agents. I owned the full early build: product positioning, pricing strategy, and a multilingual (English/Chinese/Spanish/Vietnamese) landing page, built with Next.js 14, React, and i18n, using Claude Code for AI-assisted development.',
+          tags: ['0→1 Product', 'Next.js', 'i18n', 'Claude Code'],
+          metrics: [{ value: '4', label: 'business verticals targeted at launch' }, { value: '4', label: 'languages supported at launch' }, { value: '1', label: 'landing page shipped solo, positioning to code' }],
+          metricsNote: 'Illustrative early-stage metrics' }
+      ],
+      experience: [
+        { badge: null, role: 'Business Development & Solutions Engineer', org: 'ZBS POS', meta: 'Brooklyn, NY (Hybrid) · Dec 2025 – Present',
+          bullets: ['Led market development and customer acquisition for restaurant tech solutions including SaaS-POS, an AI ordering assistant, and delivery robots', 'Engaged restaurant owners through in-person visits, cold outreach, and follow-ups to understand pain points like labor costs and peak-hour order handling', 'Presented product use cases, led product application training, and supported merchants through trials, onboarding, and basic deployment', 'Collected frontline customer feedback and worked with the product team on improvements and go-to-market adjustments'] },
+        { badge: null, role: 'AI Product Manager Intern', org: 'Xincheng AI', meta: 'Shanghai, China (Remote) · May 2024 – Sep 2024',
+          bullets: ['Contributed to feature planning and product design for a conversational AI mental companion, focusing on interaction, engagement, and retention', 'Analyzed user feedback and usage data to drive continuous iteration of dialogue flows and product features', 'Collaborated with engineers to translate product requirements into implementable solutions'] }
+      ],
+      skillGroups: [
+        { name: 'AI & Claude Hands-On', items: ['Claude API & Claude Code', 'Prompt Engineering', 'RAG Pipelines', 'Model Evaluation & Guardrails', 'Judging AI Output Trustworthiness'] },
+        { name: 'Product Methodology', items: ['User Needs Analysis', 'PRD & Roadmapping', 'Cross-functional Collaboration', 'Agile / Scrum (CSPO)', 'Go-to-Market Strategy'] },
+        { name: 'Technical Collaboration', items: ['Next.js & React', 'i18n / Localization', 'Python', 'SQL & Data Analysis', 'Partnering with Engineering'] },
+        { name: 'Domain Experience', items: ['Conversational AI', 'SaaS & POS Systems', 'Mental Health & Crisis Response', 'Restaurant Tech', 'Multilingual Products'] }
+      ],
+      certLabels: { name: 'Certificate', status: 'Status', org: 'Institution' },
+      certificates: [
+        { name: 'M.S. Software Engineering', status: 'Completed · May 2024 (GPA 4.0/4.0)', org: 'Northern Arizona University' },
+        { name: 'CSPO (Certified Scrum Product Owner)', status: 'Obtained · Feb 2025', org: 'Scrum Alliance' },
+        { name: 'AI Engineering', status: 'Expected · Aug 2026', org: 'CodePath' },
+        { name: 'Guttman MI (Motivational Interviewing)', status: 'Expected · Aug 2026', org: 'Guttman Community College (CUNY)' },
+        { name: 'Guttman TIC (Trauma-Informed Care)', status: 'Expected · Aug 2026', org: 'Guttman Community College (CUNY)' }
+      ],
+      footer: { heading: "Let's build something trustworthy together.", copyright: '© 2026 Huiru Bi' }
+    },
+    zh: {
+      heroNameShort: '毕慧茹',
+      nav: { projects: '项目', experience: '经历', skills: '技能', certs: '认证', contact: '联系' },
+      eyebrows: { hero: 'AI 产品经理 · 作品集', projects: '01 — 项目', experience: '02 — 经历', certs: '03 — 教育与认证', skills: '04 — 技能', contact: '05 — 联系' },
+      heroName: '毕慧茹',
+      heroRole: 'AI 产品经理 / AI 解决方案工程师 / AI Builder',
+      heroTagline: '打造值得信赖、解决真实问题的 AI 产品',
+      heroBio: '专注于 AI 产品的复合型产品人，深耕对话式 AI 与 RAG 系统；擅长用户需求洞察、跨职能协作与从0到1的市场推进。',
+      heroChips: ['Prompt 工程与 Claude API', 'RAG 与模型评估', 'AI 安全与可信度', '跨职能项目交付', '0→1 市场落地'],
+      sectionTitles: { projects: '核心项目', experience: '实习与工作经历', skills: '技能与工具', certs: '教育与认证' },
+      contactItems: [
+        { value: '纽约都会区 · 具备美国工作授权，无需担保', href: '#contact', target: '_self' },
+        { value: 'linkedin.com/in/huiru-bi-187a05309', href: 'https://linkedin.com/in/huiru-bi-187a05309', target: '_blank' },
+        { value: 'github.com/xiaoenbi1987', href: 'https://github.com/xiaoenbi1987', target: '_blank' }
+      ],
+      projects: [
+        { index: '01', accent: 'var(--amber)', accentDim: 'var(--amber-dim)', title: 'DocuBot', subtitle: 'RAG 文档问答助手', role: '独立完成 — 产品设计与工程实现', github: 'https://github.com/xiaoenbi1987/docubot-rag-project',
+          description: '大模型面对技术文档提问时常常一本正经地编造答案。我从零搭建了一套轻量级检索增强生成（RAG）系统：对比了纯大模型生成、关键词搜索与完整 RAG 三种方案，并亲自实现了文档索引、相关性评分与分块检索的完整链路。核心产品决策是加入安全护栏——在没有充分证据支持时，系统会主动拒绝作答。',
+          tags: ['RAG', 'Claude API', '模型评估', 'Python'],
+          metrics: [{ value: '68%', label: '较基线生成方式减少幻觉回答' }, { value: '3', label: '套检索策略进行对比评测' }, { value: '92%', label: '在留出技术文档集上的准确率' }],
+          metricsNote: '示例性原型评测数据' },
+        { index: '02', accent: 'var(--teal)', accentDim: 'var(--teal-dim)', title: 'AegisBot', subtitle: 'AI 辅助心理危机分诊原型', role: '产品设计与安全性验证', github: 'https://github.com/xiaoenbi1987/aegisbot-tinker',
+          description: '一个双模型交叉验证的心理危机分诊原型：规则引擎与独立的机器学习分类器分别评估风险等级，系统始终保守地采用较高的风险判断，确保任何个案都不会被悄然漏判。通过大量实测，我发现并修复了多个真实失效场景，包括关键词误判和语言覆盖不足，所有问题都在模型卡中透明记录。',
+          tags: ['AI 安全', '模型评估', '双模型交叉验证', '人工复核'],
+          metrics: [{ value: '0', label: '设计上杜绝高风险个案被悄然漏判' }, { value: '4', label: '个真实失效场景被发现并记录' }, { value: '2', label: '独立模型对每个个案交叉验证' }],
+          metricsNote: '示例性原型数据' },
+        { index: '03', accent: 'var(--amber)', accentDim: 'var(--amber-dim)', title: 'OrderAI', subtitle: 'AI 电话订单 SaaS 平台', role: '产品负责人 — 定位、定价与市场推进', github: 'https://github.com/xiaoenbi1987/OrderAI',
+          description: '面向美国中小商户（餐厅、美甲店、水疗中心、诊所）的早期 SaaS 产品，通过 AI 语音坐席处理电话订单。我负责了早期从0到1的全部工作：产品定位、定价策略，以及基于 Next.js 14、React 与 i18n 构建的多语言（英/中/西/越）落地页，并使用 Claude Code 辅助开发。',
+          tags: ['0→1 产品', 'Next.js', '多语言 i18n', 'Claude Code'],
+          metrics: [{ value: '4', label: '上线即覆盖的行业垂类' }, { value: '4', label: '上线支持的语言数量' }, { value: '1', label: '独立完成从定位到落地页开发' }],
+          metricsNote: '示例性早期数据' }
+      ],
+      experience: [
+        { badge: null, role: '业务拓展和解决方案工程师', org: 'ZBS POS', meta: '布鲁克林，纽约（混合办公）· 2025年12月至今',
+          bullets: ['主导餐饮科技产品（SaaS-POS、AI 点餐助手、送餐机器人）的市场拓展与客户获取', '通过线下拜访、陌拜与持续跟进，深入了解商户在人力成本、高峰时段订单处理等方面的痛点', '向商户展示产品应用场景，负责产品应用培训，支持试用、上线与基础部署', '收集一线客户反馈，与产品团队协同推动产品优化与市场策略调整'] },
+        { badge: null, role: 'AI 产品经理实习生', org: 'Xincheng AI', meta: '上海（远程）· 2024年5月 – 2024年9月',
+          bullets: ['参与一款对话式 AI 情感陪伴产品的功能规划与产品设计，聚焦用户互动、活跃度与留存', '分析用户反馈与使用数据，持续迭代对话流程与产品功能', '与工程团队协作，将产品需求转化为可落地的技术方案'] }
+      ],
+      skillGroups: [
+        { name: 'AI 与 Claude 实操', items: ['Claude API 与 Claude Code', 'Prompt 工程', 'RAG 检索增强生成', '模型评估与安全护栏', 'AI 输出可信度判断'] },
+        { name: '产品方法论', items: ['用户需求分析', 'PRD 与路线图规划', '跨职能协作', '敏捷 / Scrum (CSPO)', '市场推进策略'] },
+        { name: '技术协作能力', items: ['Next.js 与 React', '多语言 i18n', 'Python', 'SQL 与数据分析', '与工程团队协作'] },
+        { name: '行业相关经验', items: ['对话式 AI', 'SaaS 与 POS 系统', '心理健康与危机响应', '餐饮科技', '多语言产品'] }
+      ],
+      certLabels: { name: '证书', status: '状态', org: '机构' },
+      certificates: [
+        { name: '软件工程硕士', status: '已完成 · 2024年5月（GPA 4.0/4.0）', org: '北亚利桑那大学 (Northern Arizona University)' },
+        { name: 'CSPO（注册Scrum产品负责人）', status: '已获得 · 2025年2月', org: 'Scrum Alliance' },
+        { name: 'AI 工程', status: '预计完成 · 2026年8月', org: 'CodePath' },
+        { name: 'Guttman MI（动机访谈）', status: '预计完成 · 2026年8月', org: '古特曼社区学院 (CUNY) Guttman Community College' },
+        { name: 'Guttman TIC（创伤知情护理）', status: '预计完成 · 2026年8月', org: '古特曼社区学院 (CUNY) Guttman Community College' }
+      ],
+      footer: { heading: '一起打造值得信赖的 AI 产品', copyright: '© 2026 毕慧茹' }
+    }
+  };
+
+  renderVals() {
+    const lang = this.state.lang;
+    const t = this.data[lang];
+    return {
+      ...t,
+      langBtnLabel: lang === 'en' ? '中文' : 'EN',
+      toggleLang: () => this.setState(s => ({ lang: s.lang === 'en' ? 'zh' : 'en' }))
+    };
+  }
+}
+</script>
+</body>
+</html>

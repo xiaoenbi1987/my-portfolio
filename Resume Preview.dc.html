@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><meta name="viewport" content="width=device-width,initial-scale=1"><style>doc-page:not(:defined){visibility:hidden}
+body{margin:0;background:#e9e5df;font-family:'Georgia',serif}
+.toolbar{position:sticky;top:0;z-index:10;background:#1a1a1a;color:#fff;display:flex;justify-content:center;gap:12px;padding:12px;font-family:sans-serif}
+.toolbar button{background:transparent;border:1px solid #555;color:#fff;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:13px}
+.toolbar button.active{background:#fff;color:#1a1a1a}
+h1{font-size:22px;margin:0 0 2px}
+.sub{font-size:13px;color:#444;margin:0 0 10px}
+.contact{font-size:11.5px;color:#333;margin:0 0 18px}
+.contact a{color:#333}
+h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1.5px solid #1a1a1a;padding-bottom:4px;margin:20px 0 10px}
+.entry{margin-bottom:12px}
+.entry-top{display:flex;justify-content:space-between;font-weight:bold;font-size:13.5px}
+.entry-sub{font-size:12.5px;color:#333;font-style:italic;margin:1px 0 4px}
+ul{margin:4px 0 0;padding-left:18px;font-size:12.5px;line-height:1.6}
+.skills-row{font-size:12.5px;margin-bottom:6px}
+.skills-row b{font-weight:bold}
+</style></helmet>
+<div class="toolbar"><button class="{{ enBtnClass }}" onClick="{{ showEn }}">English</button><button class="{{ zhBtnClass }}" onClick="{{ showZh }}">中文</button></div>
+<sc-if value="{{ isEn }}" hint-placeholder-val="{{ true }}">
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" orientation="portrait" margin="0.6in" hint-size="850px,1100px">
+<h1>Huiru Bi</h1><p class="sub">AI Product Manager / AI Solution Engineer / AI Builder</p>
+<p class="contact">NYC Metro Area · US work authorized, no sponsorship required · xiaoenbi1987@gmail.com · linkedin.com/in/huiru-bi-187a05309 · github.com/xiaoenbi1987</p>
+<h2>Summary</h2>
+<p style="font-size:12.5px;line-height:1.6;margin:0">AI-focused product professional with hands-on experience across conversational AI and RAG systems. Skilled in prompt engineering, AI evaluation, user needs analysis, cross-functional collaboration, and go-to-market execution.</p>
+<h2>Experience</h2>
+<div class="entry"><div class="entry-top"><span>Business Development & Solutions Engineer — ZBS POS</span><span>Dec 2025 – Present</span></div><div class="entry-sub">Brooklyn, NY (Hybrid)</div><ul>
+<li>Led market development and customer acquisition for restaurant tech solutions including SaaS-POS, an AI ordering assistant, and delivery robots</li>
+<li>Engaged restaurant owners through in-person visits, cold outreach, and follow-ups to surface pain points such as labor costs and peak-hour order handling</li>
+<li>Presented product use cases, led product application training, and supported merchants through trials, onboarding, and basic deployment</li>
+<li>Collected frontline customer feedback and worked with the product team on improvements and go-to-market adjustments</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>AI Product Manager Intern — Xincheng AI</span><span>May 2024 – Sep 2024</span></div><div class="entry-sub">Shanghai, China (Remote)</div><ul>
+<li>Contributed to feature planning and product design for a conversational AI mental companion, focusing on interaction, engagement, and retention</li>
+<li>Analyzed user feedback and usage data to drive continuous iteration of dialogue flows and product features</li>
+<li>Collaborated with engineers to translate product requirements into implementable solutions</li>
+</ul></div>
+<h2>Selected Projects</h2>
+<div class="entry"><div class="entry-top"><span>DocuBot — RAG Document Q&A Assistant</span></div><ul>
+<li>Built a lightweight Retrieval-Augmented Generation system from scratch; benchmarked pure LLM generation, keyword search, and full RAG (illustrative: 68% fewer hallucinated answers vs. baseline, 92% accuracy on held-out set)</li>
+<li>Designed a safety guardrail that refuses to answer without supporting evidence</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>AegisBot — AI-Assisted Crisis Triage Prototype</span></div><ul>
+<li>Built a dual-model triage system cross-validating rule-based and ML risk assessments, conservatively defaulting to the higher risk level</li>
+<li>Identified and documented 4 real failure modes through hands-on testing (illustrative prototype metrics)</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>OrderAI — AI Phone-Ordering SaaS Platform</span></div><ul>
+<li>Owned early-stage product positioning, pricing strategy, and a multilingual (EN/ZH/ES/VI) landing page built with Next.js 14, React, and i18n using Claude Code</li>
+</ul></div>
+<h2>Education & Credentials</h2>
+<div class="skills-row"><b>M.S. Software Engineering</b> — Northern Arizona University, GPA 4.0/4.0 (May 2024)</div>
+<div class="skills-row"><b>CSPO</b> — Scrum Alliance (Feb 2025)</div>
+<div class="skills-row"><b>AI Engineering</b> — CodePath (expected Aug 2026)</div>
+<div class="skills-row"><b>Motivational Interviewing & Trauma-Informed Care</b> — Guttman Community College, CUNY (expected Aug 2026)</div>
+<h2>Skills</h2>
+<div class="skills-row"><b>AI & Claude:</b> Claude API & Claude Code, Prompt Engineering, RAG Pipelines, Model Evaluation & Guardrails</div>
+<div class="skills-row"><b>Product:</b> User Needs Analysis, PRD & Roadmapping, Cross-functional Collaboration, Agile/Scrum (CSPO), Go-to-Market Strategy</div>
+<div class="skills-row"><b>Technical:</b> Next.js & React, i18n/Localization, Python, SQL & Data Analysis</div>
+</x-import>
+</sc-if>
+<sc-if value="{{ isZh }}" hint-placeholder-val="{{ false }}">
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" orientation="portrait" margin="0.6in" hint-size="850px,1100px">
+<h1>毕慧茹</h1><p class="sub">AI 产品经理 / AI 解决方案工程师 / AI Builder</p>
+<p class="contact">纽约都会区 · 具备美国工作授权，无需担保 · xiaoenbi1987@gmail.com · linkedin.com/in/huiru-bi-187a05309 · github.com/xiaoenbi1987</p>
+<h2>个人简介</h2>
+<p style="font-size:12.5px;line-height:1.6;margin:0">专注于 AI 产品的复合型产品人，深耕对话式 AI 与 RAG 系统。擅长 Prompt 工程、AI 评估、用户需求分析、跨职能协作与从0到1的市场推进。</p>
+<h2>工作经历</h2>
+<div class="entry"><div class="entry-top"><span>业务拓展和解决方案工程师 — ZBS POS</span><span>2025年12月 – 至今</span></div><div class="entry-sub">布鲁克林，纽约（混合办公）</div><ul>
+<li>主导餐饮科技产品（SaaS-POS、AI 点餐助手、送餐机器人）的市场拓展与客户获取</li>
+<li>通过线下拜访、陌拜与持续跟进，深入了解商户在人力成本、高峰时段订单处理等方面的痛点</li>
+<li>向商户展示产品应用场景，负责产品应用培训，支持试用、上线与基础部署</li>
+<li>收集一线客户反馈，与产品团队协同推动产品优化与市场策略调整</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>AI 产品经理实习生 — Xincheng AI</span><span>2024年5月 – 2024年9月</span></div><div class="entry-sub">上海（远程）</div><ul>
+<li>参与一款对话式 AI 情感陪伴产品的功能规划与产品设计，聚焦用户互动、活跃度与留存</li>
+<li>分析用户反馈与使用数据，持续迭代对话流程与产品功能</li>
+<li>与工程团队协作，将产品需求转化为可落地的技术方案</li>
+</ul></div>
+<h2>核心项目</h2>
+<div class="entry"><div class="entry-top"><span>DocuBot — RAG 文档问答助手</span></div><ul>
+<li>从零搭建轻量级 RAG 系统，对比纯大模型生成、关键词搜索与完整 RAG（示例数据：幻觉回答减少68%，留出集准确率92%）</li>
+<li>设计安全护栏，在缺乏证据支持时主动拒绝作答</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>AegisBot — AI 辅助心理危机分诊原型</span></div><ul>
+<li>构建双模型交叉验证分诊系统，规则引擎与机器学习分类器独立评估，保守采用较高风险等级</li>
+<li>通过实测发现并记录4个真实失效场景（示例性原型数据）</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>OrderAI — AI 电话订单 SaaS 平台</span></div><ul>
+<li>负责早期产品定位、定价策略，及基于 Next.js 14、React 与 i18n 的多语言（中/英/西/越）落地页，使用 Claude Code 辅助开发</li>
+</ul></div>
+<h2>教育与认证</h2>
+<div class="skills-row"><b>软件工程硕士</b> — 北亚利桑那大学，GPA 4.0/4.0（2024年5月）</div>
+<div class="skills-row"><b>CSPO</b> — Scrum Alliance（2025年2月）</div>
+<div class="skills-row"><b>AI 工程</b> — CodePath（预计2026年8月）</div>
+<div class="skills-row"><b>动机访谈与创伤知情护理</b> — 古特曼社区学院 CUNY（预计2026年8月）</div>
+<h2>技能</h2>
+<div class="skills-row"><b>AI 与 Claude：</b>Claude API 与 Claude Code、Prompt 工程、RAG 检索增强生成、模型评估与安全护栏</div>
+<div class="skills-row"><b>产品：</b>用户需求分析、PRD 与路线图规划、跨职能协作、敏捷/Scrum (CSPO)、市场推进策略</div>
+<div class="skills-row"><b>技术：</b>Next.js 与 React、多语言 i18n、Python、SQL 与数据分析</div>
+</x-import>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: 'en' };
+  renderVals() {
+    return {
+      isEn: this.state.lang === 'en', isZh: this.state.lang === 'zh',
+      enBtnClass: this.state.lang === 'en' ? 'active' : '', zhBtnClass: this.state.lang === 'zh' ? 'active' : '',
+      showEn: () => this.setState({ lang: 'en' }), showZh: () => this.setState({ lang: 'zh' })
+    };
+  }
+}
+</script>
+</body>
+</html>

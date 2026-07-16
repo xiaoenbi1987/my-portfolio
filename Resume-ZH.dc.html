@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><style>doc-page:not(:defined){visibility:hidden}
+body{margin:0;background:#e9e5df;font-family:'Georgia',serif}
+h1{font-size:22px;margin:0 0 2px}
+.sub{font-size:13px;color:#444;margin:0 0 10px}
+.contact{font-size:11.5px;color:#333;margin:0 0 18px}
+.contact a{color:#333}
+h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1.5px solid #1a1a1a;padding-bottom:4px;margin:20px 0 10px}
+.entry{margin-bottom:12px}
+.entry-top{display:flex;justify-content:space-between;font-weight:bold;font-size:13.5px}
+.entry-sub{font-size:12.5px;color:#333;font-style:italic;margin:1px 0 4px}
+ul{margin:4px 0 0;padding-left:18px;font-size:12.5px;line-height:1.6}
+.skills-row{font-size:12.5px;margin-bottom:6px}
+.skills-row b{font-weight:bold}
+</style>
+<script>
+addEventListener('load', () => {
+  (async () => {
+    try { await document.fonts.ready; } catch (e) {}
+    const imgs = Array.from(document.images).filter((i) => !i.complete);
+    await Promise.race([Promise.allSettled(imgs.map((i) => i.decode())), new Promise((r) => setTimeout(r, 8000))]);
+    setTimeout(() => window.print(), 800);
+  })();
+});
+</script>
+</helmet>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" orientation="portrait" margin="0.6in" hint-size="850px,1100px">
+<h1>毕慧茹</h1><p class="sub">AI 产品经理 / AI 解决方案工程师 / AI Builder</p>
+<p class="contact">纽约都会区 · 具备美国工作授权，无需担保 · xiaoenbi1987@gmail.com · linkedin.com/in/huiru-bi-187a05309 · github.com/xiaoenbi1987</p>
+<h2>个人简介</h2>
+<p style="font-size:12.5px;line-height:1.6;margin:0">专注于 AI 产品的复合型产品人，深耕对话式 AI 与 RAG 系统。擅长 Prompt 工程、AI 评估、用户需求分析、跨职能协作与从0到1的市场推进。</p>
+<h2>工作经历</h2>
+<div class="entry"><div class="entry-top"><span>业务拓展和解决方案工程师 — ZBS POS</span><span>2025年12月 – 至今</span></div><div class="entry-sub">布鲁克林，纽约（混合办公）</div><ul>
+<li>主导餐饮科技产品（SaaS-POS、AI 点餐助手、送餐机器人）的市场拓展与客户获取</li>
+<li>通过线下拜访、陌拜与持续跟进，深入了解商户在人力成本、高峰时段订单处理等方面的痛点</li>
+<li>向商户展示产品应用场景，负责产品应用培训，支持试用、上线与基础部署</li>
+<li>收集一线客户反馈，与产品团队协同推动产品优化与市场策略调整</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>AI 产品经理实习生 — Xincheng AI</span><span>2024年5月 – 2024年9月</span></div><div class="entry-sub">上海（远程）</div><ul>
+<li>参与一款对话式 AI 情感陪伴产品的功能规划与产品设计，聚焦用户互动、活跃度与留存</li>
+<li>分析用户反馈与使用数据，持续迭代对话流程与产品功能</li>
+<li>与工程团队协作，将产品需求转化为可落地的技术方案</li>
+</ul></div>
+<h2>核心项目</h2>
+<div class="entry"><div class="entry-top"><span>DocuBot — RAG 文档问答助手</span></div><ul>
+<li>从零搭建轻量级 RAG 系统，对比纯大模型生成、关键词搜索与完整 RAG（示例数据：幻觉回答减少68%，留出集准确率92%）</li>
+<li>设计安全护栏，在缺乏证据支持时主动拒绝作答</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>AegisBot — AI 辅助心理危机分诊原型</span></div><ul>
+<li>构建双模型交叉验证分诊系统，规则引擎与机器学习分类器独立评估，保守采用较高风险等级</li>
+<li>通过实测发现并记录4个真实失效场景（示例性原型数据）</li>
+</ul></div>
+<div class="entry"><div class="entry-top"><span>OrderAI — AI 电话订单 SaaS 平台</span></div><ul>
+<li>负责早期产品定位、定价策略，及基于 Next.js 14、React 与 i18n 的多语言（中/英/西/越）落地页，使用 Claude Code 辅助开发</li>
+</ul></div>
+<h2>教育与认证</h2>
+<div class="skills-row"><b>软件工程硕士</b> — 北亚利桑那大学，GPA 4.0/4.0（2024年5月）</div>
+<div class="skills-row"><b>CSPO</b> — Scrum Alliance（2025年2月）</div>
+<div class="skills-row"><b>AI 工程</b> — CodePath（预计2026年8月）</div>
+<div class="skills-row"><b>动机访谈与创伤知情护理</b> — 古特曼社区学院 CUNY（预计2026年8月）</div>
+<h2>技能</h2>
+<div class="skills-row"><b>AI 与 Claude：</b>Claude API 与 Claude Code、Prompt 工程、RAG 检索增强生成、模型评估与安全护栏</div>
+<div class="skills-row"><b>产品：</b>用户需求分析、PRD 与路线图规划、跨职能协作、敏捷/Scrum (CSPO)、市场推进策略</div>
+<div class="skills-row"><b>技术：</b>Next.js 与 React、多语言 i18n、Python、SQL 与数据分析</div>
+</x-import>
+
+</x-dc>
+</body>
+</html>
